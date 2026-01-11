@@ -15,5 +15,5 @@ export function useApi() {
     return `${CDN}${cdnEndpoint}${resource.user_id}/${resource.metadata?.transformed_path || resource.content}`;
   }
 
-  return { CDN, API, avatarURL, resourceURL };
+  return { CDN, API, avatarURL, resourceURL, cdnEndpoint };
 }
